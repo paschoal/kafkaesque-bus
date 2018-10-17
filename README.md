@@ -1,20 +1,21 @@
-# Scalable Kafka Message Bus Example
+# Scalable Kafka Message Bus Study
 
 ## Goal
 The goal of this repository is to be a study about developing
-a message bus dialog between two services using Apache Kafka and
+a message bus dialogue between two services using Apache Kafka and
 other technologies.
 
 ## Can I help?
-Sure thing! I mainly working solo on this, but any suggestion, comments
-and feedback are welcome. Please feel free to drop me a message, create issue
+Sure thing! I am mainly working solo on this, but any suggestion, comments
+and feedback are welcome. Please feel free to drop me a message, create an issue
 or comment it out.
 
 ## Why Kafka?
-Also intended to develop a version of this same project using MQTT and other message
-brokers; But right now, I have a idea that I want to exercise and benchmark.
+One of the good feature of using Kafka as message-bus is possibility of fast persisted replayable
+message storage. Other message brokers / technologies are also good, but there is a few approaches
+that I want to explore in this study.
 
 ## Can I use this for my own project? (Commercial / Personal)
 Yeah, feel free to clone, fork, copy, and use it, but be aware that I don't provide any
-garanty that this is the best approach, does not have pitfalls or even if it is functional.
+garantee that this is the best approach, does not have pitfalls or even that is functional.
 I will do my best ;)
