@@ -1,0 +1,19 @@
+version: '3'
+services:
+  zookeeper:
+    image: zookeeper:3.4
+    ports:
+      - '2181'
+
+  kafka:
+    image: ches/kafka:latest
+    ports:
+      - '9092'
+      - '7203'
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=kafka
+      - ZOOKEEPER_IP=zookeeper
+    volumes:
+      - './kafka_data:/data'
+      - './kafka_logs:/logs'
+
