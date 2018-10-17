@@ -11,8 +11,8 @@ and feedback are welcome. Please feel free to drop me a message, create an issue
 or comment it out.
 
 ## Why Kafka?
-One of the good feature of using Kafka as message-bus is possibility of fast persisted replayable
-message storage. Other message brokers / technologies are also good, but there is a few approaches
+One of the good features of using Kafka as message-bus is the possibility of fast persisted replayable
+message storage. Other message brokers/technologies are also good, but there are a few approaches
 that I want to explore in this study.
 
 ## Can I use this for my own project? (Commercial / Personal)
