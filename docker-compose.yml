@@ -16,20 +16,13 @@ services:
     ports:
       - '8081:8081'
 
-  zookeeper:
-    image: zookeeper:3.4
-    ports:
-      - '2181:2181'
-
   kafka:
-    image: ches/kafka:latest
+    image: spotify/kafka
     ports:
       - '9092:9092'
       - '7203:7203'
+    extra_hosts:
+      - 'kafka:172.19.0.2'
     environment:
-      - KAFKA_ADVERTISED_HOST_NAME=kafka
-      - ZOOKEEPER_IP=zookeeper
-    volumes:
-      - './kafka_data:/data'
-      - './kafka_logs:/logs'
-
+      - ADVERTISED_HOST=kafka
+      - ADVERTISED_PORT=9092
